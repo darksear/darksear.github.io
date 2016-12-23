@@ -13,7 +13,7 @@ window.addEventListener("load", function(event) {
   logCRP();
 });
 
-var cssId = '//fonts.googleapis.com/css?family=Open+Sans:400,700';  
+var cssId = font;  
 if (!document.getElementById(cssId))
 {
     var head  = document.getElementsByTagName('head')[0];
@@ -21,7 +21,7 @@ if (!document.getElementById(cssId))
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = cssId;
+    link.href = '//fonts.googleapis.com/css?family=Open+Sans:400,700';
     link.media = 'all';
     head.appendChild(link);
 }
